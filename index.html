@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Javascript Todo</title>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>TODO it! Javascript</h1>
+    </header>
+
+    <section class="input-section shadow">
+      <input type="text" placeholder="Type what you have to do" autofocus>
+      <span class="addContainer">
+        <i class="addBtn fa fa-plus" aria-hidden="true"></i>
+      </span>
+    </section>
+
+    <section class="list-section">
+      <ul class="item-list">
+        <!-- <li class="shadow">
+          <i class="checkBtn fa fa-check" aria-hidden="true"></i>
+          <span class="removeBtn" type="button">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+          </span>
+        </li> -->
+      </ul>
+    </section>
+
+    <section class="clear-list">
+      <span class="clearAllBtn">Clear All</span>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
