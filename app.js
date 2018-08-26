@@ -1,14 +1,12 @@
 var modelController = (function () {
-  // var todoItems = [];
   var data = {
     todoItems: []
   }
+
   return {
     addItem: function(value) {
       var id;
       data.todoItems.push(value);
-      // if ()
-      console.log(localStorage);
       id = data.todoItems.length - 1;
       localStorage.setItem(value, value);
     },
