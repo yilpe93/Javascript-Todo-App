@@ -43,8 +43,6 @@ var viewController = (function () {
 
     addListItem: function(value, id) {
       var html, newHtml;
-      
-      // obj = localStorage;
 
       html = `<li data-id="%id%" class="shadow">
       <i class="checkBtn fa fa-check" aria-hidden="true"></i>%value%<span class="removeBtn"><i class="fa fa-trash-o" aria-hidden="true"></i></span></li >`;
@@ -85,7 +83,6 @@ var controller = (function(modelCtrl, viewCtrl) {
       console.log('LocalStorage has item.');
       var todoItems = modelCtrl.getTodoItems();
       for (var i = 0; i < localStorage.length; i++) {
-        // console.log(localStorage.length);
         var item = localStorage.getItem(localStorage.key(i));
         todoItems.push(item);
         viewCtrl.addListItem(item, i);
