@@ -1,21 +1,25 @@
 var modelController = (function () {
-  var todoItems = [];
-  
+  // var todoItems = [];
+  var data = {
+    todoItems: []
+  }
   return {
     addItem: function(value) {
       var id;
-      todoItems.push(value);
-      id = todoItems.length - 1;
-      localStorage.setItem(id, value);
+      data.todoItems.push(value);
+      // if ()
+      console.log(localStorage);
+      id = data.todoItems.length - 1;
+      localStorage.setItem(value, value);
     },
 
     deleteItem: function (obj) {
-      todoItems.splice(obj.id, 1);
-      localStorage.removeItem(obj.id);
+      data.todoItems.splice(obj.id, 1);
+      localStorage.removeItem(localStorage.key(obj.value));
     },
 
     getTodoItems: function() {
-      return todoItems;
+      return data.todoItems;
     }
   }
 })();
